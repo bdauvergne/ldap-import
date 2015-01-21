@@ -58,9 +58,9 @@ for dn, add in adds:
     try:
         conn.add_s(dn, add)
     except ldap.LDAPError, e:
-         print >>sys.stderr, 'Unable to create entry %s: %s" % (dn, e)
+         print >>sys.stderr, 'Unable to create entry %s: %s' % (dn, e)
 for dn, modify in modifies:
     try:
         conn.modify_s(dn, modify)
     except ldap.LDAPError, e:
-         print >>sys.stderr, 'Unable to modify entry %s: %s" % (dn, e)
+         print >>sys.stderr, 'Unable to modify entry %s: %s' % (dn, e)
